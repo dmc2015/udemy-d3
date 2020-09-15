@@ -14,7 +14,7 @@ var g = d3.select("#chart-area")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
     .append("g")
-        .attr("transform", "translate(" + margin.left 
+        .attr("transform", "translate(" + margin.left
             + ", " + margin.top + ")");
 
 // X Label
@@ -77,7 +77,7 @@ d3.json("data/buildings.json").then(function(data){
 
     var rects = g.selectAll("rect")
         .data(data)
-    
+
     rects.enter()
         .append("rect")
             .attr("y", 0)
